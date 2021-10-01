@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+img {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_container {
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upper_row, .lower_row {
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card_wrap {
+  margin: 4px;
+  display: flex;
+}
+.middle_row {
+  display: flex;
+  justify-content: space-between;
+}
+.home_page_title {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.small_title_text, .big_title_text {
   color: white;
+  text-align: center;
+}
+.small_title_text {
+  font-size: 25px;
+}
+.big_title_text {
+  font-size: 55px;
 }
 
-.App-link {
-  color: #61dafb;
+.search_form {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_input {
+  padding: 10px;
+  margin-right: 15px;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 100%;
+  outline: none;
+}
+
+.search_button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: #000002;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 25px;
+  border-color: white;
+}
+
+.searchedShowsContainer {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.searchedShowsContainer .card_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.searchedShowsContainer a {
+  text-decoration: none;
+}
+.searchedShowsContainer p {
+  margin: 0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.searchedShowsContainer a:hover p {
+  color: #545454;
+}
+
+.searchedShowsContainer .favorites {
+  font-size: 16px;
+  font-weight: 500;
+}
+.searchedShowsContainer .favorites:hover {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: red;
+}
+
+.favorites span {
+  font-size: 25px;
+}
+
+.favorites span:hover {
+  color: red;
 }
