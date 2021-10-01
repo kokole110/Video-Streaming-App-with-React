@@ -1,7 +1,7 @@
 import React, {useState, useEffect, Fragment} from 'react';
 import { Link } from "react-router-dom";
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth, logout, db } from "../firebase.js";
+import { auth, db } from "../firebase.js";
 import { 
 	collection, 
 	query, 
@@ -9,8 +9,7 @@ import {
 	doc, 
 	getDocs, 
 	addDoc,
-	deleteDoc,
-	updateDoc
+	deleteDoc
 	} 
 from "firebase/firestore";
 
@@ -46,7 +45,7 @@ export default function Shows(){
 			}
 			queryFavShow()
 				.then((showArr)=>setFavShowArr(showArr))
-				.then(()=>console.log(favShowArr))
+				
 		}
 	}, [user, loading])
 
@@ -54,7 +53,7 @@ export default function Shows(){
 		<div className="searchedShowsContainer">
 			{videoDB.map((video)=>
 				<div className="card_wrap" key={video && video.id}>
-					<Link to={video && video.url}>
+					<Link to={'/shows'}>
 						<div className="card_body">
 							{video.image ? (
 								<img 

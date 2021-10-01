@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -19,9 +19,6 @@ export default function SearchPage(){
   		setSearchedShows(data);
   		return data;
   	})
-  	.then((data)=>{
-  		console.log(data);
-  	})
   }, [])
 
 	return (
@@ -36,7 +33,7 @@ export default function SearchPage(){
 									alt={video.show.name} />
 								) : (
 								<img 
-									src={"../src/images/NoImagePlaceholder.png"} 
+									src={"./NoImagePlaceholder.png"} 
 									alt='No image to display' />
 								)}
 						</div>

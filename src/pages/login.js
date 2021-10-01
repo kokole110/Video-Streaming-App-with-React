@@ -5,7 +5,6 @@ import Form from 'react-bootstrap/Form';
 import { useHistory } from "react-router-dom";
 import { auth, logInWithEmailAndPassword } from "../firebase.js";
 import { useAuthState } from "react-firebase-hooks/auth"; 
-import { Home, getVideoArray, getRandomVideo } from "./home.js";
 import { MainContainer } from "./mainContainer.js";
 
 

@@ -3,12 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from "./header.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './pages/home.js';
 import MainContainer from './pages/mainContainer.js';
 import SignUp from './pages/signup.js';
 // import Account from './pages/account.js';
 import Login from './pages/login.js';
-import SearchPage from './pages/searchPage.js'
 import Shows from './pages/shows.js'
 
 function App() {

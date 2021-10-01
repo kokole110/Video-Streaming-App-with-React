@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import SearchPage from './searchPage.js'
-
 
 export default function Home() {
-	const [videoDB, setVideoDB] = useState([]);
 	const [firstRow, setFirstRow] = useState([]);
 	const [lastRow, setLastRow] = useState([]);
 	const [firstRandomVideo, setFirstRandomVideo] = useState({});
